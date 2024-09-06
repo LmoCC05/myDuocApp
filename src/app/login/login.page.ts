@@ -5,11 +5,15 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
 })
-export class LoginPage implements OnInit {
+export class LoginPage {
 
-  constructor() { }
+  public correo: string;
+  public paswword: any;
 
-  ngOnInit() {
+  constructor() { 
+    this.correo = '',
+    this.paswword = '';
   }
+
 
 }
